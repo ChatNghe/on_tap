@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a =+prompt('Nhập a:');
+  let b=+prompt('Nhập b:');
+  let c=+prompt('Nhập c:');
+  if ( a + b > c && c + b > a && a + c > b ){
+    if (a===b || b===c || c===a){
+      document.write('Tam giác cân');
+    }
+    else if ((a*a + b*b) === c*c || (c*c + b*b) === a*a || (a*a + c*c) ===b*b ){
+      document.write('Tam giác vuông');
+    }
+    else if ( a===b && b===c)
+      document.write('Tam giác đều');
+    else document.write('Tam giác');
+  }
+  else document.write('Không là tam giác');
+
+</script>
+</body>
+</html>
