@@ -61,8 +61,12 @@
             j++;
         }
     }
-    let aver = sum7 / j;
-    document.write('7. TBC các phần tử > 10 và chia 4 dư 3: ' + aver + '<br>');
+    if (j > 0){
+        let aver = sum7 / j;
+        document.write('7. TBC các phần tử > 10 và chia 4 dư 3: ' + aver + '<br>');
+    }
+    else document.write('7. TBC các phần tử > 10 và chia 4 dư 3: 0'+ '<br>');
+
 
     //8. Tìm max của mảng-----------------------------------------------------------------------------
 
@@ -81,7 +85,7 @@
         if (arr[i] % 2 === 1) {
             maxodd = arr[i];
             break;
-        }
+        }document.write('9. Phần tử lẻ lớn nhất trong mảng: Không có' + '<br>');
     }
     for (let i = 0; i < n; i++) {
         if (arr[i] > maxodd && arr[i] % 2 === 1) {
